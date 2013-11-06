@@ -1,9 +1,7 @@
 # omxdirector
 
-## Objective
-
 Provide a simple interface to omxplayer, especially
-for [the loop enabled versione](https://github.com/pasky/omxplayer).
+for [the loop enabled version](https://github.com/pasky/omxplayer).
 
 
 ## Usage

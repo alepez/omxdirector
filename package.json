@@ -1,7 +1,7 @@
 {
   "name": "omxdirector",
   "version": "0.0.1",
-  "description": "Nodejs module to control omxplayer. Specifically written for the raspberry pi",
+  "description": "Provide a simple interface to omxplayer.",
   "main": "lib/main.js",
   "repository": {
     "type": "git",
