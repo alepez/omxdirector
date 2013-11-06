@@ -1,0 +1,20 @@
+{
+  "name": "omxdirector",
+  "version": "0.0.1",
+  "description": "Nodejs module to control omxplayer. Specifically written for the raspberry pi",
+  "main": "lib/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alessandro-pezzato/omxdirector.git"
+  },
+  "keywords": [
+    "Raspberry",
+    "pi",
+    "omxplayer"
+  ],
+  "author": "Alessandro Pezzato <alessandro@pezzato.net>",
+  "license": "BSD",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
