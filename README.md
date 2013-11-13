@@ -19,6 +19,7 @@ for [the loop enabled version](https://github.com/pasky/omxplayer).
  - **audioOutput** `"local"` or `"hdmi"` as `-o` omxplayer argument. If not specified or `"default"` is system default.
  - **loop** `true` to enable `-L` omxplayer argument. Default is `false`.
 
+#### Example
 
     omx.play('video.mp4', {loop: true}); // enables loop
     omx.play('video.mp4', {audioOutput: 'local'}); // analog audio output
