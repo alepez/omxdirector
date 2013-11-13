@@ -5,12 +5,10 @@ for [the loop enabled version](https://github.com/pasky/omxplayer).
 
 ## Usage
 
+### Basic usage
+
     var omx = require('omxdirector');
     omx.play('video.avi');
-
-### Enable loop
-
-    omx.play('video.avi', {loop: true});
 
 ### Multiple files
 
@@ -18,8 +16,11 @@ for [the loop enabled version](https://github.com/pasky/omxplayer).
 
 ### Options
 
- - **audioOutput** `"local"` or `"hdmi"` as `-o` omxplayer argument. If not specified is system default.
- - **loop** `true` or `false` to enable `-L` omxplayer argument. Default is `false`.
+ - **audioOutput** `"local"` or `"hdmi"` as `-o` omxplayer argument. If not specified or `"default"` is system default.
+ - **loop** `true` to enable `-L` omxplayer argument. Default is `false`.
+
+    omx.play('video.mp4', {loop: true}); // enables loop
+    omx.play('video.mp4', {audioOutput: 'local'}); // analog audio output
 
 ### Status
 
@@ -35,8 +36,8 @@ If process is running:
 
     {
       loaded: true,
-      files: <Array>,     // files array passed to play(files, options)
-      options: <Object>,  // options object passed to play(files, options)
+      videos: <Array>,    // videos array passed to play(videos, options)
+      settings: <Object>,  // default settings or options object passed to play(videos, options)
       playing: <boolean>  // true if not paused, false if paused
     }
 
