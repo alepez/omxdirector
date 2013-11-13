@@ -3,7 +3,6 @@
 Provide a simple interface to omxplayer, especially
 for [the loop enabled version](https://github.com/pasky/omxplayer).
 
-
 ## Usage
 
     var omx = require('omxdirector');
@@ -16,6 +15,11 @@ for [the loop enabled version](https://github.com/pasky/omxplayer).
 ### Multiple files
 
     omx.play(['video.mp4', 'anothervideo.mp4', 'foo.mp4'], {loop: true});
+
+### Options
+
+ - **audioOutput** `"local"` or `"hdmi"` as `-o` omxplayer argument. If not specified is system default.
+ - **loop** `true` or `false` to enable `-L` omxplayer argument. Default is `false`.
 
 ### Status
 
