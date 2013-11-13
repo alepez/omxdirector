@@ -44,13 +44,27 @@ Set where to look for videos. Useful when all videos are in the same directory.
 
 Instead of this:
 
-    omx.play(['/home/pez/videos/foo.mp4', '/home/pez/videos/bar.mp4', '/home/pez/videos/asdasd.mp4']);
+    omx.play(['/home/pi/videos/foo.mp4', '/home/pi/videos/bar.mp4', '/home/pi/videos/asdasd.mp4']);
 
 It's possible to use this shortcut:
 
-    omx.setVideoDir('/home/pez/videos/');
+    omx.setVideoDir('/home/pi/videos/');
     omx.play(['foo.mp4', 'bar.mp4', 'asdasd.mp4']);
 
+### Video suffix
+
+    omx.setVideoSuffix(suffix);
+
+Set a suffix for videos. Useful when all videos share the same format.
+
+Instead of this:
+
+    omx.play(['foo.mp4', 'bar.mp4', 'asdasd.mp4']);
+
+It's possible to use this shortcut:
+
+    omx.setVideoSuffix('.mp4');
+    omx.play(['foo', 'bar', 'asdasd']);
 
 ### Other methods
 
