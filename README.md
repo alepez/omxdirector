@@ -25,6 +25,24 @@ for [the loop enabled version](https://github.com/pasky/omxplayer).
     omx.isLoaded();  // return true if omxprocess is running
     omx.isPlaying(); // return true if omxprocess is running and video is not paused
 
+### Status
+
+    omx.getStatus()
+
+Return an object with current status:
+
+If process is not running:
+    { loaded: false }
+
+If process is running:
+
+    {
+      loaded: true,
+      files: <Array>,     // files array passed to play(files, options)
+      options: <Object>,  // options object passed to play(files, options)
+      playing: <boolean>  // true if not paused, false if paused
+    }
+
 ### Events
 
     omx.on('load', function(files, options){}); // video successfully loaded (omxprocess starts)
