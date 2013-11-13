@@ -17,14 +17,6 @@ for [the loop enabled version](https://github.com/pasky/omxplayer).
 
     omx.play(['video.mp4', 'anothervideo.mp4', 'foo.mp4'], {loop: true});
 
-### Other methods
-
-    omx.pause();     // pause the video
-    omx.play();      // resume video playing
-    omx.stop();      // stop video playing and terminate omxplayer process
-    omx.isLoaded();  // return true if omxprocess is running
-    omx.isPlaying(); // return true if omxprocess is running and video is not paused
-
 ### Status
 
     omx.getStatus()
@@ -32,6 +24,7 @@ for [the loop enabled version](https://github.com/pasky/omxplayer).
 Return an object with current status:
 
 If process is not running:
+
     { loaded: false }
 
 If process is running:
@@ -42,6 +35,30 @@ If process is running:
       options: <Object>,  // options object passed to play(files, options)
       playing: <boolean>  // true if not paused, false if paused
     }
+
+### Video directory
+
+    omx.setVideoDir(path);
+
+Set where to look for videos. Useful when all videos are in the same directory.
+
+Instead of this:
+
+    omx.play(['/home/pez/videos/foo.mp4', '/home/pez/videos/bar.mp4', '/home/pez/videos/asdasd.mp4']);
+
+It's possible to use this shortcut:
+
+    omx.setVideoDir('/home/pez/videos/');
+    omx.play(['foo.mp4', 'bar.mp4', 'asdasd.mp4']);
+
+
+### Other methods
+
+    omx.pause();     // pause the video
+    omx.play();      // resume video playing
+    omx.stop();      // stop video playing and terminate omxplayer process
+    omx.isLoaded();  // return true if omxprocess is running
+    omx.isPlaying(); // return true if omxprocess is running and video is not paused
 
 ### Events
 
