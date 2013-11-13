@@ -19,14 +19,21 @@ for [the loop enabled version](https://github.com/pasky/omxplayer).
 
 ### Other methods
 
-    omx.pause(); // pause the video
-    omx.play();  // resume video playing
-    omx.stop();  // stop video playing and terminate omxplayer process
+    omx.pause();     // pause the video
+    omx.play();      // resume video playing
+    omx.stop();      // stop video playing and terminate omxplayer process
     omx.isLoaded();  // return true if omxprocess is running
     omx.isPlaying(); // return true if omxprocess is running and video is not paused
 
+### Events
+
+    omx.on('load', function(files, options){}); // video successfully loaded (omxprocess starts)
+    omx.on('play', function(){});  // when successfully started or resumed from pause
+    omx.on('pause', function(){}); // when successfully paused
+    omx.on('stop', function(){});  // when successfully stopped (omxplayer process ends)
+
 ## TODO
 
- - Emit event when each video start, stop, pause etc...
+ - Emit event when each video start, stop etc...
  - Implement forward/backward.
  
