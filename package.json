@@ -1,6 +1,6 @@
 {
   "name": "omxdirector",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Provide a simple interface to omxplayer.",
   "main": "lib/main.js",
   "repository": {
