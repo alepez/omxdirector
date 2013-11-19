@@ -3,6 +3,11 @@
 Provide a simple interface to omxplayer, especially
 for [the loop enabled version](https://github.com/pasky/omxplayer).
 
+Support multiple file playing and loops. It's capable of seamless
+loops if `omxplayer` support it natively. When `omxplayer` does
+not support loops, this module handles loops respawning omxplayer
+process.
+
 ## Usage
 
 ### Basic usage
@@ -15,7 +20,7 @@ for [the loop enabled version](https://github.com/pasky/omxplayer).
     omx.play(['video.mp4', 'anothervideo.mp4', 'foo.mp4'], {loop: true});
 
 **WARNING:** at this time, multiple files playing is not supported by *official* **omxplayer**.
-If using with a fork version, you must enable native loop support.
+If using with a fork version, you must enable native loop support (see below).
 
 ### Options
 
@@ -37,6 +42,9 @@ a fork (like [pasky omxplayer](https://github.com/pasky/omxplayer)) that support
 you can enable native loop by calling
 
     var omx = require('omxdirector').enableNativeLoop();
+
+If using with standard omxplayer, a fallback is provided: once a video is finished,
+another process of omxplayer is launched.
 
 ### Status
 
