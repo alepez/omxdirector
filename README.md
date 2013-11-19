@@ -14,15 +14,29 @@ for [the loop enabled version](https://github.com/pasky/omxplayer).
 
     omx.play(['video.mp4', 'anothervideo.mp4', 'foo.mp4'], {loop: true});
 
+**WARNING:** at this time, multiple files playing is not supported by *official* **omxplayer**.
+If using with a fork version, you must enable native loop support.
+
 ### Options
 
  - **audioOutput** `"local"` or `"hdmi"` as `-o` omxplayer argument. If not specified or `"default"` is system default.
  - **loop** `true` to enable `-L` omxplayer argument. Default is `false`.
 
+**WARNING:** at this time, loop is not supported by *official* **omxplayer**.
+If using with a fork version, you must enable native loop support. 
+
 #### Example
 
     omx.play('video.mp4', {loop: true}); // enables loop
     omx.play('video.mp4', {audioOutput: 'local'}); // analog audio output
+
+### Native loop support
+
+At this time, *official* omxplayer does not support loop and multiple files. If you have
+a fork (like [pasky omxplayer](https://github.com/pasky/omxplayer)) that support it,
+you can enable native loop by calling
+
+    var omx = require('omxdirector').enableNativeLoop();
 
 ### Status
 
