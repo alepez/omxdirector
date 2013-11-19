@@ -43,8 +43,11 @@ you can enable native loop by calling
 
     var omx = require('omxdirector').enableNativeLoop();
 
+### Loop fallback
+
 If using with standard omxplayer, a fallback is provided: once a video is finished,
-another process of omxplayer is launched.
+another process of omxplayer is launched. It support multiple files and infinite loop.
+Although this works fine, native support is better because there's no gap between video.
 
 ### Status
 
