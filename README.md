@@ -106,4 +106,5 @@ It's possible to use this shortcut:
 
  - Emit event when each video start, stop etc...
  - Implement forward/backward.
+ - Enable a fallback for loop and multiple files when native support is disabled.
  
