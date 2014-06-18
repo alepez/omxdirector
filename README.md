@@ -2,9 +2,9 @@
 
 Nodejs module providing a simple interface to omxplayer.
 
-Support multiple file playing and loops. It's capable of seamless
-loops if `omxplayer` support it natively. When `omxplayer` does
-not support loops, this module handles loops respawning omxplayer
+Supports multiple files playing and loops. It's capable of seamless
+loops if `omxplayer` supports it natively. When `omxplayer` doesn't
+support loops, this module handles loops respawning omxplayer
 process.
 
 ## Usage
