@@ -1,7 +1,6 @@
 # omxdirector
 
-Provide a simple interface to omxplayer, especially
-for [the loop enabled version](https://github.com/pasky/omxplayer).
+Nodejs module providing a simple interface to omxplayer.
 
 Support multiple file playing and loops. It's capable of seamless
 loops if `omxplayer` support it natively. When `omxplayer` does
@@ -25,7 +24,7 @@ If using with a fork version, you must enable native loop support (see below).
 ### Options
 
  - **audioOutput** `"local"` or `"hdmi"` as `-o` omxplayer argument. If not specified or `"default"` is system default.
- - **loop** `true` to enable `-L` omxplayer argument. Default is `false`.
+ - **loop** `true` to enable `--loop` omxplayer argument. Default is `false`.
 
 **WARNING:** at this time, loop is not supported by *official* **omxplayer**.
 If using with a fork version, you must enable native loop support. 
@@ -37,9 +36,8 @@ If using with a fork version, you must enable native loop support.
 
 ### Native loop support
 
-At this time, *official* omxplayer does not support loop and multiple files. If you have
-a fork (like [pasky omxplayer](https://github.com/pasky/omxplayer)) that support it,
-you can enable native loop by calling
+If you have a versione of `omxplayer` supporting native loop with `--loop` flag,
+you can enable it by calling:
 
     var omx = require('omxdirector').enableNativeLoop();
 

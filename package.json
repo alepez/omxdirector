@@ -1,6 +1,6 @@
 {
   "name": "omxdirector",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Provide a nodejs interface for omxplayer (Raspberry Pi player). Support multiple file and loop.",
   "main": "lib/main.js",
   "repository": {
@@ -11,9 +11,12 @@
     "Raspberry",
     "pi",
     "Raspberry Pi",
+    "rpi",
     "omxplayer",
     "omx",
-    "loop"
+    "loop",
+    "video",
+    "player"
   ],
   "author": "Alessandro Pezzato <alessandro@pezzato.net>",
   "license": "BSD"
