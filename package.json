@@ -1,6 +1,6 @@
 {
   "name": "omxdirector",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Provide a nodejs interface for omxplayer (Raspberry Pi player). Support multiple file and loop.",
   "main": "lib/main.js",
   "repository": {
