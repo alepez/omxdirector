@@ -103,6 +103,8 @@ It's possible to use this shortcut:
     omx.stop();      // stop video playing and terminate omxplayer process
     omx.isLoaded();  // return true if omxprocess is running
     omx.isPlaying(); // return true if omxprocess is running and video is not paused
+    omx.volup();     // Increases the volume one notch
+    omx.voldown();   // Decreases the volume one notch
 
 ### Events
 
