@@ -108,6 +108,8 @@ It's possible to use this shortcut:
     omx.isPlaying(); // return true if omxprocess is running and video is not paused
     omx.volup();     // Increases the volume one notch
     omx.voldown();   // Decreases the volume one notch
+    omx.backwards(); // Seek by -30 seconds
+    omx.forwards();  // Seek by +30 seconds
 
 ### Events
 
