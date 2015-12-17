@@ -1,11 +1,11 @@
 {
   "name": "omxdirector",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Provide a nodejs interface for omxplayer (Raspberry Pi player). Support multiple file and loop.",
   "main": "lib/main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alessandro-pezzato/omxdirector.git"
+    "url": "https://github.com/alepez/omxdirector.git"
   },
   "keywords": [
     "Raspberry",
