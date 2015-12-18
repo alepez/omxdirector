@@ -19,5 +19,9 @@
     "player"
   ],
   "author": "Alessandro Pezzato <alessandro@pezzato.net>",
-  "license": "BSD"
+  "license": "BSD",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "pty.js": "^0.2.8"
+  }
 }
