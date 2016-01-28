@@ -7,6 +7,10 @@
     "type": "git",
     "url": "https://github.com/alepez/omxdirector.git"
   },
+  "contributors":[
+  {"name":"Jesse Garrison",
+  	"email":"jesse@takethefort.com"
+  }],
   "keywords": [
     "Raspberry",
     "pi",

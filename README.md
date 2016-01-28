@@ -25,6 +25,7 @@ If using with a fork version, you must enable native loop support (see below).
 
  - **audioOutput** `"local"` or `"hdmi"` as `-o` omxplayer argument. If not specified or `"default"` is system default.
  - **loop** `true` to enable `--loop` omxplayer argument. Default is `false`.
+ - **osd** 'false' to enable '--no-osd' omxplayer argument. Default is 'true.' 
 
 **WARNING:** at this time, loop is not supported by *official* **omxplayer**.
 If using with a fork version, you must enable native loop support. 
