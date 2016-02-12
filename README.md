@@ -7,12 +7,15 @@ loops if `omxplayer` supports it natively. When `omxplayer` doesn't
 support loops, this module handles loops respawning omxplayer
 process.
 
+This version supports playing remote (HTTP) files and allow users to seek (-/+ 30 seconds).
+
 ## Usage
 
 ### Basic usage
 
     var omx = require('omxdirector');
     omx.play('video.avi');
+    omx.play('http://www.server.com/video.mp4');
 
 ### Multiple files
 
@@ -105,6 +108,8 @@ It's possible to use this shortcut:
     omx.isPlaying(); // return true if omxprocess is running and video is not paused
     omx.volup();     // Increases the volume one notch
     omx.voldown();   // Decreases the volume one notch
+    omx.backwards(); // Seek by -30 seconds
+    omx.forwards();  // Seek by +30 seconds
 
 ### Events
 
